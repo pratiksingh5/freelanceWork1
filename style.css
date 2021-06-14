@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+  
+  #trianglesContainer {
+    /* You can choose whatever size you want */
+    margin:0 ;
+    height: 100%;
+    background-color:#BBB;
+    /* position: absolute; */
+    z-index: -999;
+    top: 0;
+    border: 2px grey solid;
+  }
+  
+  hr{
+    margin-top: 80px;
+    background-color: rgb(182, 182, 182);
+    height: 1px;
+    border: none;
+  }
+
+
+
+  #background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+  }
+
+  #background nav{
+    width: 220px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 16%;
+   
+  }
+
+  #background #navtip{
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-top: 105px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 400px;
+    left: 16%;
+
+  }
+  #content{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 18%;
+    padding: 2%;
+    color: white;
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
+  #content h1{
+    font-family: 'PT Sans', sans-serif;
+   color: rgb(177, 177, 177);
+   letter-spacing: -1px;
+   font-size: 28px;
+  }
+  #prflImage{
+    width: 100%;
+    height: 70%;
+    background-color: whitesmoke;
+    margin: 30px 0;
+    background-image: url(https://images.unsplash.com/photo-1550935114-99de2f488f47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center;
+  }
+  p{
+    font-family: 'Roboto';
+    color:rgb(189, 189, 189);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+  }
