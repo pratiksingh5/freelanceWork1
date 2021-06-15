@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 html,body{
     width: 100%;
@@ -21,13 +22,7 @@ html,body{
     border: 2px grey solid;
   }
   
-  hr{
-    margin-top: 80px;
-    background-color: rgb(182, 182, 182);
-    height: 1px;
-    border: none;
-  }
-
+ 
 
 
   #background{
@@ -45,7 +40,12 @@ html,body{
     background-color: black;
     position: absolute;
     top: 0;
-    left: 16%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6rem 0;
    
   }
 
@@ -57,18 +57,19 @@ html,body{
     border-top: 105px solid rgb(0, 0, 0);
     position: absolute;
     top: 400px;
-    left: 16%;
+    left: 8%;
 
   }
   #content{
     width: 50%;
     height: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
-    right: 18%;
-    padding: 2%;
-    color: white;
+    right: 24%;
+    padding: 3%;
+    color: rgb(37, 37, 37);
+    text-align: center;
     overflow: scroll;
   }
   ::-webkit-scrollbar{
@@ -77,11 +78,11 @@ html,body{
   
   #content h1{
     font-family: 'PT Sans', sans-serif;
-   color: rgb(177, 177, 177);
+   color: rgb(65, 65, 65);
    letter-spacing: -1px;
    font-size: 28px;
   }
-  #prflImage{
+  /* #prflImage{
     width: 100%;
     height: 70%;
     background-color: whitesmoke;
@@ -89,11 +90,73 @@ html,body{
     background-image: url(https://images.unsplash.com/photo-1550935114-99de2f488f47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
     background-size: cover;
     background-position: center;
-  }
+  } */
   p{
     font-family: 'Roboto';
-    color:rgb(189, 189, 189);
+    color:rgb(27, 27, 27);
     font-size: 12px;
     letter-spacing: 0.5px;
     word-spacing: 1px;
+  }
+  a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    cursor: pointer;
+  }
+  #elements{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 300px;
+    min-height: 250px;
+    /* background-color: yellowgreen; */
+    /* border-radius: 10px; */
+    margin-top: 2rem;
+    color: rgb(54, 54, 54);
+  }
+  .card h5{
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  .cardImg{
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    background-color: yellow;
+    margin-bottom: 1rem;
+  }
+  .cardImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+  }
+  #prflCard{
+    /* width: 200px; */
+    height: 400px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    text-align: center;
+    color: rgb(68, 68, 68);
+  }
+  #prflImg{
+    margin-bottom: 2rem;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    background-image: url('./images/profile\ pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    
   }
